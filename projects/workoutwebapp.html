@@ -34,28 +34,21 @@
     <div class="container">
         <div align="center" class="row">
             <div class="col-md-12">
-                <h1>Building an electric skateboard</h1>
+                <h1>Building a flask web app</h1>
             </div>
             <div align="center" class="row">
                 <p>
-                    To make an electric skateboard the first thing I did was to decide on a configuration and look at what other projects have done in the space to see what parts I may need. Having studied engineering at University, I was confident with the five key components
-                    as seen below. The drive train (motor), the electronic speed controller (ESC), the trasmitter/reciever (TX/RX) and the battery.
-                    <br>
-                </p>
-                <img src="../assets/esb1.png" alt="mockup">
+                    I wanted to create a flask web app so I could record my workouts there was a few requirements I wanted to satisfy: Be able to create workouts with sets and exercises, save data to an online database, Host it to <a href="http://workout.willotty.com">workout.willotty.com</a>
+                    <br> I had no prior knowledge of flask, hosting dynamic web apps or online database management so there was a huge knowledge gap. Step one was understanding what tools I would need to use to get the job done. I settled on using Flask
+                    and python (obviously) as well as firebase for the database side of things. I had used firebase hosting before to launch a static website (The very website you are reading at the moment).<br>The first part of the project was to attempt
+                    a hello 👋 world 🌎 with flask and host it locally. Luckily, 🍀 this was quite easy as flask allows for quick configuration to host locally. The next step was to play ▶️ around with different (preferrably free) services that allow
+                    me to deploy webapps to the cloud ☁️ and different BaaS (Backend as a service) options. I settled on cloud run and firebase real-time database as they are both gcloud offerings with very generous free tiers. Little did I know at the
+                    time ⏰️ this would not match my requirements. As although it satisfies requirements 1 and 2. It is impossible to host to a custom domain for free 💰. Instead I opted to host the middle layer on Heroku and use firebase real-time database
+                    as the project's BaaS.
 
-                <p>From there, I decided on a parts list and followed the diagram above. For the ESC I went with a <a href="https://vesc-project.com/">VESC</a>, an open source project that aims to unlock advanced software and hardware implementations of
-                    cutting edge electric power systems and put them in the hands of developers.
+
+
                 </p>
-                <iframe height="515px" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRXP1RF-20Jmg9vsSUiicwcYEensJQUzW1sKHv8tY9m9IbCqHm4U3MmvjI4_MVtcJUpWmYJrQ5b_u5M/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
-                <p>
-                    I prepared a presentation to show the planning and final project.
-                </p>
-                <object data="Electric%20Skateboard.pdf" type="application/pdf" width="100%" height="800px"> 
-                    <p>It appears you don't have a PDF plugin for this browser.
-                     No biggie... you can <a href="Electric%20Skateboard.pdf">click here to
-                    download the PDF file.</a></p>  
-                  </object>
             </div>
         </div>
     </div>
